@@ -1,0 +1,19 @@
+{
+  "name": "module01",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "watch": "babel src --out-dir public --presets @babel/preset-react --extensions \".jsx\" --watch",
+    "start": "nodemon app.js",
+    "compile": "babel src --presets @babel/react src --out-dir public"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.x",
+    "@babel/core": "^7.x",
+    "@babel/preset-react": "^7.x",
+    "nodemon": "^2.0.22"
+  }
+}
